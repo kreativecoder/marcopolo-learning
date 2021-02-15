@@ -38,7 +38,7 @@ public class ProductService {
         }
 
         if (!StringUtils.isEmpty(request.getDescription())) {
-            product.setTitle(request.getDescription());
+            product.setDescription(request.getDescription());
         }
 
         return productRepository.save(product);
